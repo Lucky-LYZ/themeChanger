@@ -2,7 +2,7 @@ import React from 'react'
 import { HashRouter, Route,Switch } from 'react-router-dom';
 
 //同步加载
-import AppContainer from '../container/AppContainer/AppContainer'
+import AppContainer from '../container/AppContainer/index'
 
 
 const RootRouter = () => (

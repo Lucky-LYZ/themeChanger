@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './AppContainer.scss'
+import styles from './index.scss'
 import BlockColor from '../../component/BlockColor'
 
 /**
