@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import styles from './AppContainer.scss'
-
-import { Input, Button } from 'antd'
-
 import BlockColor from '../../component/BlockColor'
 
 /**
@@ -27,6 +24,7 @@ export default class AppContainer extends Component {
                 '@primary-color': val,
                 '@link-color': val,
                 '@btn-primary-bg': val,
+                '@secondry-color': val,
             }
         )
     }
@@ -35,9 +33,7 @@ export default class AppContainer extends Component {
         return (
             <div className={styles.body}>
                 <main className={styles.page}>
-                    <p className={styles.txt}>{`<p>标签使用css原生变量var实现变色...`}</p>
-                    <Input placeholder={'antd组件变色'} />
-                    <Button type="primary" style={{marginBottom:50}}>antd组件变色</Button>
+                    <p className={styles.txt}>{`当前内容为<p>标签，使用css原生变量var实现变色.`}</p>
                     <div className={styles.Setting}>
                         <div className={styles.part}>
                             <p className={styles.part_title}>主题色设置</p>
