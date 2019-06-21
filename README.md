@@ -1,8 +1,5 @@
-# antd在线换肤定制功能
+# react 项目在线换肤定制功能
 
->最近react项目，用的antd框架，然后看见他的antdPro例子里面有个定制功能很帅，老大说做，那就做吧，鼓捣了一晚终于实现了。
-
-+ 这里我的项目是在自己写的 [webpack4-react脚手架](https://www.yangyuetao.cn/#/detail/5b24eafd365d9c28a0eee643) 的基础上做修改的，如果你用的create-react-app或者其他的脚手架可能会有相应修改。
 + 安装`cnpm i antd-theme-generator --save`
 + index.html
 	<!---->
