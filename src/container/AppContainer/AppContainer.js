@@ -19,14 +19,12 @@ export default class AppContainer extends Component {
      * @param {*} val 
      */
     colorChange(val) {
-        window.less.modifyVars(
-            {
-                '@primary-color': val,
-                '@link-color': val,
-                '@btn-primary-bg': val,
-                '@secondry-color': val,
-            }
-        )
+        window.less.modifyVars({
+            '@primary-color': val,
+            '@link-color': val,
+            '@btn-primary-bg': val,
+            '@secondry-color': val,
+        })
     }
     
     render() {
