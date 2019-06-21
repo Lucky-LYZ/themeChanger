@@ -1,6 +1,6 @@
 
 const path = require('path');
-const DIST_PATH = path.resolve(__dirname, 'dist');
+const DIST_PATH = path.resolve('', 'dist');
 const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
@@ -8,7 +8,7 @@ const copyWebpackPlugin = require('copy-webpack-plugin');
 
 
 module.exports = {
-    // entry: path.resolve(__dirname, 'src', 'index.js'),
+    // entry: path.resolve('', 'src', 'index.js'),
     // output: {
     //     path: DIST_PATH,
     //     publicPath: "",
@@ -47,7 +47,7 @@ module.exports = {
             },
             {//字体图标
                 test: /\.(eot|woff|woff2|ttf)$/i,
-                // include: path.resolve(__dirname, 'node_modules'),
+                // include: path.resolve('', 'node_modules'),
                 use: {
                     loader: 'url-loader',
                     options: {
@@ -95,7 +95,7 @@ module.exports = {
             },
             {
                 test: /\.less$/,
-                // include: path.resolve(__dirname, 'src'),
+                // include: path.resolve('', 'src'),
                 use: [
                     'style-loader',
                     {
@@ -129,7 +129,7 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                // include: path.resolve(__dirname, 'src'),
+                // include: path.resolve('', 'src'),
                 use: [
                     'style-loader',
                     {
@@ -167,11 +167,11 @@ module.exports = {
         // new webpack.HotModuleReplacementPlugin()
         new CleanWebpackPlugin(['dist']),
         new copyWebpackPlugin([{//复制static到dist
-            from: __dirname + '/src/static',//打包的静态资源目录地址
+            from: '/src/static',//打包的静态资源目录地址
             to: './static' //打包到dist下面的static
         }]),
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'src', 'index.html'),//模板
+            template: path.resolve('', 'src', 'index.html'),//模板
             filename: 'index.html',
             inject: false, //允许插件修改哪些内容，包括head与body
             hash: true, //是否添加hash值

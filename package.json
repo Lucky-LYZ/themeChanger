@@ -45,9 +45,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node color &&  webpack-dev-server --config webpack.config.dev.js",
+    "dev": "node color &&  webpack-dev-server --config ./src/config/webpack.config.dev.js",
     "start": "npm run dev",
-    "build": "node color && webpack --config webpack.config.prod.js"
+    "build": "node color && webpack --config ./src/config/webpack.config.prod.js"
   },
   "author": "yyt",
   "license": "ISC"
